@@ -1,1 +1,27 @@
-ohhmalenadina mai siriye
+pipeline {
+    agent any
+
+    stages {
+        stage('clone stage'){
+            steps {
+                script {
+                    echo "this is clone stage"
+
+                }
+
+            }
+
+        }
+
+        stage('build'){
+            steps {
+                script {
+                    echo "this is build stage"
+
+                }
+
+            }
+
+        }
+    }
+}
